@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<body>
+
+<!--============== Top parallax image=============-->
+
+<div id="topImage">
+	<h1>TO-DO LIST</h1>
+</div>
+<!--================================================-->
+
+
+<div id="listDiv">
+	<!--===================New task input section=================-->
+
+<br><br>
+	<center>
+
+<div   style="background-image: url('marble.jpg');  padding: 20px 0;">
+		<div class="input-field " id="tMenu" >
+			<select class="icons" id="selectMenu">
+				<option value="" disabled selected>Choose task priority</option>
+				<option value="Low" data-icon="low.jpg" class="circle">Low</option>
+				<option value="Important" data-icon="important.jpg" class="circle">Important</option>
+				<option value="Urgent" data-icon="urgent.jpg" class="circle">Urgent</option>
+			</select>
+		</div>
+
+
+		<div class="input-field inline" id="tField" >
+			<input id="newtask" type="text" class="validate"  >
+		</div>
+
+		<br>
+
+		<a class="waves-effect waves-light btn"  id="addButton"  style="background-color:#8e6287;">Add Task</a>
+		&ensp;  &ensp;
+
+
+</div>
+
+	</center>
+
+
+
+
+<!--===============================================================-->
+
+
+
+<!--===================List =========================-->
+
+	<div   style="margin:2%; ">
+	<div>
+		<i class="small material-icons" content="Delete finshed tasks"  id="deleteTaskButton" style="cursor:pointer;" >delete</i>
+		Delete finished tasks
+
+		&ensp;&ensp;&ensp;
+		<i class="small material-icons" content="Delete finshed tasks" id="listByPriorityLink"  style="cursor:pointer;" >swap_vert</i>
+		List by Priority
+	</div>
+		<br><br>
+		<ul  id="list" style="display: flex; flex-wrap: wrap;" ></ul>
+	</div>
+
+
+<!--==========================================================-->
+
+	<script>
+
+
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+
+	</script>
+
+<script type="text/javascript"  src="todolist.js" ></script>
+</div>
+</body>
+</html>
