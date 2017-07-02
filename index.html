@@ -17,9 +17,9 @@
 
 <!--============== Top parallax image=============-->
 
-<div id="topImage">
-	<h1>TO-DO LIST</h1>
-</div>
+<!--<div id="topImage">-->
+	<!--<h1>TO-DO LIST</h1>-->
+<!--</div>-->
 <!--================================================-->
 
 
@@ -64,14 +64,18 @@
 <!--===================List =========================-->
 
 	<div   style="margin:2%; ">
-	<div>
-		<i class="small material-icons" content="Delete finshed tasks"  id="deleteTaskButton" style="cursor:pointer;" >delete</i>
-		Delete finished tasks
+	<div   style="display: flex; flex-wrap: wrap;">
+		<div  style="margin-right: 15px;" >
+			<i class="small material-icons" content="Delete finshed tasks"  id="deleteTaskButton" style="cursor:pointer;" >delete</i>
+				Delete finished tasks
+		</div>
 
-		&ensp;&ensp;&ensp;
-		<i class="small material-icons" content="Delete finshed tasks" id="listByPriorityLink"  style="cursor:pointer;" >swap_vert</i>
-		List by Priority
+		<div>
+			<i class="small material-icons" content="Delete finshed tasks" id="listByPriorityLink"  style="cursor:pointer;" >swap_vert</i>
+				List by Priority
+		</div>
 	</div>
+
 		<br><br>
 		<ul  id="list" style="display: flex; flex-wrap: wrap;" ></ul>
 	</div>
